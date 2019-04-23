@@ -1,4 +1,20 @@
 {{ define "main" }}
-	<h1 class="center">{{ .Title }}</h1>
-	<div class="center">{{ .Content }}</div>
+	<div class="container">
+		<header>
+			<div class="hey">{{ .Title }}</div>
+		</header>
+		<aside>
+			<div class="image"><img src="{{ .Site.BaseURL }}img/photo.jpg"/></div>
+			<div class="caption">This isn't me, but it's close enough. <em>Photo cred: Sean Kong from Unsplash.</em></div>
+		</aside>
+		<article>{{ .Content }}</article>
+		<footer>
+			<p style="justify-self: start;">Copyright Jenny Cheng 2019</p>
+			<p style="justify-self: end;">
+				<i class="far fa-envelope"></i>
+				<i class="fab fa-dribbble"></i>
+				<i class="fab fa-github"></i>
+			</p>
+		</footer>
+	</div>
 {{ end }}

@@ -1,10 +1,12 @@
 ---
-title: "Hello."
+title: "Jenny Cheng"
 date: 2019-04-09T13:59:15-07:00
 draft: false
 author: "Jenny"
 ---
 
-<i class="fas fa-tools" style="font-size: 72pt;"></i>
+I'm a <span class="keyword">technical writer</span> in the <span class="keyword">Bay Area</span>. 
 
-This site is under construction.
+I like to make static websites with <span class="keyword">Hugo</span> and <span class="keyword">Netlify</span> (like this one).
+
+I also do graphic design with <span class="keyword">Photoshop</span> and <span class="keyword">Illustrator</span>, and their more affordable brethren, <span class="keyword">Affinity Photo</span> and <span class="keyword">Affinity Designer</span>.

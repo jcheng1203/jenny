@@ -1,0 +1,16 @@
+html, body { height: 100%; }
+
+.container {
+	display: grid;
+	grid-template-columns: 100px 600px;
+	grid-column-gap: 20px;
+}
+
+.header { 
+	grid-column: 1; 
+	background-color: tomato;
+}
+.content { 
+	grid-column: 2; 
+	background-color: pink;
+}

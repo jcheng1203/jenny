@@ -1,31 +1,88 @@
-/* ----- Utility ----- */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900,900i|Roboto:300,300i');
+
+html { font-size: 62.5%; }
+html, body { height: 100%; }
 
 .container {
 	display: grid;
-	margin: auto;
-	max-width: 200px;
-	border: 1px solid #AAA;
-	border-radius: 5px;
-}
-
-.center {
-	margin: inherit auto;
-	text-align: center;
-}
-
-body, html {
+	grid-template-columns: 1fr 300px 520px 1fr;
+	grid-template-rows: 80px 1fr 80px;
+	grid-column-gap: 5rem;
+	justify-content: center;
 	height: 100%;
+}
+
+header { 
+	grid-column: span 4; 
+	grid-row: 1;
 	display: grid;
-	font-family: Roboto, sans-serif;
-	font-weight: 300;
-	color: #444;
+	place-items: center;
+	background-color: tomato;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-weight: 500;
-	margin: 20px 20px 0px 20px;
+.hey { 
+	font-family: 'Playfair Display', serif;
+	font-size: 3.6rem;
+	color: white; 
 }
 
-p {
-	margin: 20px;
+aside {
+	grid-column: 2;
+	grid-row: 2;
+	align-self: center;
+}
+
+img { 
+	border-radius: 300px;
+	height: 300px;
+	width: 300px; 
+}
+
+.caption {
+	margin-top: 1rem;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: tomato;
+}
+
+article { 
+	grid-column: 3; 
+	grid-row: 2;
+	display: grid;
+	place-content: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.4rem;
+	color: tomato;
+}
+
+p { line-height: 1.5; }
+
+.keyword {
+	padding-left: .5rem;
+	padding-right: .5rem;
+	font-style: italic;
+	background-color: tomato;
+	color: white;
+}
+
+footer {
+	grid-column: span 4;
+	grid-row: 3;
+	background-color: tomato;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4rem;
+	color: white;
+}
+
+i {
+	margin-right: 2rem;
+	font-size: 2.4rem;
 }
