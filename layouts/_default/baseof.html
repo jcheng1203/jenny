@@ -7,15 +7,14 @@
     <title>{{ .Site.Title }}</title>
     <meta name="description" content="{{ $.Site.Params.Description }}">
     <meta name="author" content="{{ $.Site.Params.Author }}">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/normalize.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 
-<!--     {{ $sass := resources.Get "scss/jenny.scss" }}
-    {{ $style := $sass | resources.ToCSS }} -->
+    {{ $scss := resources.Get "scss/jenny.scss" }}
+    {{ $style := $scss | resources.ToCSS }}
   </head>
 
   <body>
+    {{ partial "navigation.html" . }}
     {{ block "main" . }}{{ end }}
   </body>
 </html>

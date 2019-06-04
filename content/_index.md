@@ -9,4 +9,4 @@ I'm a <span class="keyword">technical writer</span> in the <span class="keyword"
 
 I like to make static websites with <span class="keyword">Hugo</span> and <span class="keyword">Netlify</span> (like this one).
 
-I also do graphic design with <span class="keyword">Photoshop</span> and <span class="keyword">Illustrator</span>, and their more affordable brethren, <span class="keyword">Affinity Photo</span> and <span class="keyword">Affinity Designer</span>.
+I also do graphic design with <span class="keyword">Photoshop</span>, <span class="keyword">Illustrator</span>, and <span class="keyword">InDesign</span>.

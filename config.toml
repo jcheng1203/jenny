@@ -1,3 +1,11 @@
 baseURL = "https://jenny.chenglinks.com/"
 languageCode = "en-us"
 title = "Jenny Cheng"
+sectionPagesMenu = "main"
+[menu]
+
+  [[menu.main]]
+    identifier = "book-reviews"
+    name = "Book Reviews"
+    url = "/book-reviews/"
+    weight = 100
