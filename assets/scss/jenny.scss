@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+
+@import 'reset';
+@import 'variables';
+@import 'type';
+
+html, body { 
+	display: flex; 
+	justify-content: center;
+	height: 100%;
+}
+
+body { background-image: $warm-flame; }
+
+.container {
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
+}
+
+header { 
+	background-color: $header-bg-color; 
+	padding: $global-padding;
+}
+
+.logo { 
+	font-family: $body-text-font; 
+	font-weight: 500;
+	font-size: 1.4rem;
+	color: gray;
+}
+
+nav { 
+	background-color: $nav-bg-color; 
+	padding: 1rem $global-padding;
+}
+
+a.nav-link {
+	font-family: $header-font;
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+article { 
+	height: 100%;
+	// background-color: $article-bg-color;
+	padding: $global-padding;
+	max-width: 720px;
+}
+
+footer {
+	display: flex;
+	background-color: $footer-bg-color;
+	padding: $global-padding;
+}
+
+.copyright { 
+	font-size: 1rem; 
+	flex-basis: 50%;
+}
+
+.social {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: space-evenly;
+}

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,700,700i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap");
+html, body, div, header, article, aside, footer, nav, ul, ol, table, p, h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  font-size: 62.5%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #e8d5d6; }
+
+h1 {
+  font-size: 2.8rem; }
+
+h2 {
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4, h5, h6 {
+  font-size: 1.8rem; }
+
+div, p, li, td {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: #fff7f7;
+  font-size: 1.4rem; }
+
+h1 {
+  margin-bottom: 1.4rem;
+  background: linear-gradient(to left, #e1eec3, #f05053);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+p {
+  line-height: 1.5; }
+
+strong {
+  font-weight: 700; }
+
+em {
+  font-style: italic; }
+
+a {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  color: #b24349;
+  text-decoration: none;
+  transition: color .18s; }
+  a:hover {
+    color: mistyrose;
+    transition: color .18s; }
+
+html, body {
+  display: flex;
+  justify-content: center;
+  height: 100%; }
+
+body {
+  background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px; }
+
+header {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2rem; }
+
+.logo {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: gray; }
+
+nav {
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 1rem 2rem; }
+
+a.nav-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem; }
+
+article {
+  height: 100%;
+  padding: 2rem;
+  max-width: 720px; }
+
+footer {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2rem; }
+
+.copyright {
+  font-size: 1rem;
+  flex-basis: 50%; }
+
+.social {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-evenly; }

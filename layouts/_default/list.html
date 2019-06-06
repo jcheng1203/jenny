@@ -1,7 +1,9 @@
 {{ define "main" }}
-<ul>
-{{ range .Site.RegularPages }}
-	<li><a href="{{ .URL }}">{{ .Title }}</a></li>
-{{ end }}
-</ul>
+<article>
+	<ul class="list-links">
+	{{ range .Site.RegularPages }}
+		{{ partial "summary.html" . }}
+	{{ end }}
+	</ul>
+</article>
 {{ end }}

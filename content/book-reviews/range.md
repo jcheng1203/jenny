@@ -5,6 +5,4 @@ draft: true
 author: "Jenny"
 ---
 
-## _Range_, David Epstein
-
 I really, really like this book. The anecdotes and stories in it are invigorating!
