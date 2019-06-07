@@ -1,6 +1,6 @@
 baseURL = "https://jenny.chenglinks.com/"
 languageCode = "en-us"
-title = "Jenny Cheng"
+title = "Fiona Wheats' Gleanings"
 sectionPagesMenu = "main"
 [menu]
 
@@ -8,4 +8,10 @@ sectionPagesMenu = "main"
     identifier = "book-reviews"
     name = "Book Reviews"
     url = "/book-reviews/"
-    weight = 100
+    weight = 2
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 1

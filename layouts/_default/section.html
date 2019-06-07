@@ -1,6 +1,6 @@
 {{ define "main" }}
 <article class="list">
-	{{ range .Site.RegularPages }}
+	{{ range where .Pages "Section" .Type }}
 		{{ partial "summary.html" . }}
 	{{ end }}
 </article>

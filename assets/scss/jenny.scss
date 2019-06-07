@@ -4,64 +4,99 @@
 @import 'reset';
 @import 'variables';
 @import 'type';
+@import 'summary';
 
-html, body { 
-	display: flex; 
+html, body { height: 100%; }
+
+body { 
+	background-image: $warm-flame;
+	background-attachment: fixed;
+	display: grid;
+	grid-template-rows: 100px 50px 1fr 100px;
+	grid-template-columns: 1fr 900px 1fr;
+	grid-template-areas: "header header header"
+						 "nav nav nav"
+						 ". article ."
+						 "footer footer footer";
 	justify-content: center;
-	height: 100%;
-}
-
-body { background-image: $warm-flame; }
-
-.container {
-	display: flex;
-	flex-direction: column;
-	max-width: 1000px;
 }
 
 header { 
-	background-color: $header-bg-color; 
-	padding: $global-padding;
+	grid-area: header;
+	display: flex; 
+	justify-content: center;
+	align-items: center;
 }
 
 .logo { 
-	font-family: $body-text-font; 
-	font-weight: 500;
-	font-size: 1.4rem;
-	color: gray;
+	color: $logo-color;
+	font-size: 2.4rem; 
+	font-weight: 700;
 }
 
-nav { 
-	background-color: $nav-bg-color; 
-	padding: 1rem $global-padding;
+nav {
+	grid-area: nav;
+	display: flex; 
+	justify-content: center;
 }
 
-a.nav-link {
-	font-family: $header-font;
-	font-weight: 400;
-	font-size: 1.4rem;
+.nav-link {
+	padding: 0 $global-padding;
+	color: $body-text-color;
+	font-size: 1.8rem; 
 }
 
 article { 
-	height: 100%;
-	// background-color: $article-bg-color;
-	padding: $global-padding;
-	max-width: 720px;
+	grid-area: article; 
+	padding: 4rem;
 }
 
-footer {
+.home {
+	p { font-size: 2.4rem; }
+}
+
+.single { 
+	background-color: $article-bg-color; 
+	margin-bottom: 8rem;
+	border-radius: 10px;
+
+	.front-matter {
+		padding: 1rem 0;
+
+		hr {
+			width: 2rem;
+			margin: 1rem 0 1rem;
+			border-top: 1px solid $body-text-color;
+			border-bottom: 0;
+			border-right: 0;
+			border-left: 0;
+		}
+	}
+}
+
+.list {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+footer { 
+	grid-area: footer;
+	display: grid;
+	grid-template-columns: 1fr repeat(3, 300px) 1fr;
+	grid-template-areas: ". copyright credits social .";
+	align-items: center;
 	background-color: $footer-bg-color;
-	padding: $global-padding;
-}
 
-.copyright { 
-	font-size: 1rem; 
-	flex-basis: 50%;
-}
+	div { 
+		font-size: 1.4rem; 
+		justify-self: center;
+	}
+	i { font-size: 1.8rem; }
 
-.social {
-	display: flex;
-	flex-basis: 50%;
-	justify-content: space-evenly;
+	.copyright { grid-area: copyright; }
+	.credits { grid-area: credits; }
+	.social { grid-area: social; }
 }

@@ -1,4 +1,11 @@
 <div class="summary">
-	<a href="{{ .URL }}">{{ .Title }}</a>
-	<p>{{ .Summary }}</p>
+	<a href="{{ .URL }}">
+		<h2>{{ .Title }}</h2>
+		<hr class="summary-divider" />
+		<p>{{ .Date.Format "January 2, 2006" }}</p>
+		<hr class="summary-divider" />
+		<p>{{ .Params.summary }}</p>
+	</a>
+	<hr class="read-more-divider" />
+	<a class="read-more" href="{{ .URL }}">Read More</a>
 </div>
