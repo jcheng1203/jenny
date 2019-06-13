@@ -15,13 +15,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #D37378; }
 
 h1 {
-  font-size: 3.6rem; }
+  font-size: 3.6rem;
+  margin-bottom: 1.8rem; }
 
 h2 {
-  font-size: 3.0rem; }
+  font-size: 3.0rem;
+  margin-bottom: 1.5rem; }
 
 h3 {
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+  margin: 3.6rem 0rem 1.2rem; }
 
 h4, h5, h6 {
   font-size: 1.8rem; }
@@ -30,19 +33,16 @@ div, p, li, td {
   font-family: "Roboto Mono", monospace;
   font-weight: 400;
   color: #483439;
-  font-size: 1.8rem; }
-
-h1 {
-  margin-bottom: 1.8rem;
-  color: #D37378; }
-
-h2 {
-  margin-bottom: 3.3rem;
-  color: #D37378; }
+  font-size: 1.8rem;
+  line-height: 1.5; }
 
 p {
-  line-height: 1.5;
   margin-bottom: 2.1rem; }
+
+ul {
+  margin-bottom: 2.1rem;
+  margin-left: 2rem;
+  padding-left: 2rem; }
 
 strong {
   font-weight: 700; }

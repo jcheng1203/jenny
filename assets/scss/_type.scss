@@ -6,9 +6,19 @@ h1, h2, h3, h4, h5, h6 {
 	color: $header-color;
 }
 
-h1 { font-size: 3.6rem; }
-h2 { font-size: 3.0rem; }
-h3 { font-size: 2.4rem; }
+h1 { 
+	font-size: 3.6rem; 
+	margin-bottom: 1.8rem;
+	}
+h2 { 
+	font-size: 3.0rem; 
+	margin-bottom: 1.5rem;
+}
+h3 { 
+	font-size: 2.4rem; 
+	margin: 3.6rem 0rem 1.2rem;
+}
+
 h4, h5, h6 { font-size: 1.8rem; }
 
 div, p, li, td { 
@@ -16,21 +26,15 @@ div, p, li, td {
 	font-weight: 400;
 	color: $body-text-color;
 	font-size: 1.8rem;
+	line-height: 1.5;
 }
 
-h1 { 
-	margin-bottom: 1.8rem;
-	color: $header-color;
-}
+p { margin-bottom: 2.1rem; }
 
-h2 {
-	margin-bottom: 3.3rem;
-	color: $header-color;
-}
-
-p { 
-	line-height: 1.5; 
+ul {
 	margin-bottom: 2.1rem;
+	margin-left: 2rem;
+	padding-left: 2rem;
 }
 
 strong { font-weight: 700; }
